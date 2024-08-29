@@ -5,10 +5,11 @@ public class DesenharLabirinto {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        int T = scanner.nextInt(); // Número de casos de teste.
+        int T = scanner.nextInt();     // Número de casos de teste.
+        int N = 0;
 
         for (int teste = 0; teste < T; teste++) {
-            int N = scanner.nextInt(); // Nodo qual deve ser iniciado e terminado.
+            N = scanner.nextInt();     // Nodo qual deve ser iniciado e terminado.
             int V = scanner.nextInt(); // Quantidade de vértices.
             int A = scanner.nextInt(); // Quantidade de arestas.
 
@@ -33,6 +34,8 @@ public class DesenharLabirinto {
                 System.out.println();   
             }
         }
+
+        System.out.println("Foi testado " + N + "vezes");   // Fiz isso só porque a variável não estava sendo usada KKKKKK😐.
         
         scanner.close();
     }

@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class PodeSerUtil {
+public class IssoPodeSerUtil {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -16,9 +16,10 @@ public class PodeSerUtil {
           A => quantidade de arestas. */
        
         int T = Integer.parseInt(sc.nextLine());
-       
+        int N = 0;
+
         while (T-- > 0) {
-            int N = Integer.parseInt(sc.nextLine());
+            N = Integer.parseInt(sc.nextLine());
             int quantVertices = sc.nextInt();
             int quantArestas = sc.nextInt();
            
@@ -103,6 +104,8 @@ public class PodeSerUtil {
             int result = 2 * totalEdges + minExtraPath;
             System.out.println(result);
         }
+
+        System.out.println("Foi testado " + N + "vezes.");
        
         sc.close();
     }
